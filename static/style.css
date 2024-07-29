@@ -1,0 +1,133 @@
+* {
+    text-align: justify;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, rgb(233, 59, 59), black);
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    text-align: left;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: left;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    padding: 5px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    display: flex; 
+    justify-content: center; 
+}
+
+
+footer a {
+    font-weight: lighter;
+    color: inherit;
+    font-family: sans-serif;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 15px;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(254, 254, 254, 0.5);
+    text-align: center;
+    margin-top: 80px;  /* Espaço para o nav */
+    margin-bottom: 60px;  /* Espaço para o footer */
+    width: 400px;
+}
+
+h1 {
+    color: black;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin: 8px 0 4px;
+    text-align: left;
+    color: black;
+}
+
+form input {
+    width: calc(100% - 20px);
+    padding: 6px;
+    margin-bottom: 8px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+a.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 10px;
+}
+
+a.btn:hover {
+    background-color: #555;
+}
+
+.result {
+    color: black;
+}

@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Resultado</h1>
+<p>O medoid mais próximo dos seus dados é: {{ medoid }}</p>
+<a href="{{ url_for('form') }}" class="btn">Voltar para o Formulário</a>
+{% endblock %}

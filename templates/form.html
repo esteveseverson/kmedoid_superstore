@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Medoid Finder</h1>
+<form action="/result" method="post" onsubmit="return validateForm();">
+    <label for="income">Orçamento Anual:</label>
+    <input type="number" id="income" name="income" step="0.01" required>
+    <label for="recency">Numero de dias da ultima compra:</label>
+    <input type="number" id="recency" name="recency" step="0.01" required>
+    <label for="num_deals_purchases">Numero de compras feitas com desconto:</label>
+    <input type="number" id="num_deals_purchases" name="num_deals_purchases" step="0.01" required>
+    <label for="num_web_purchases">Numero de compras feitas no site:</label>
+    <input type="number" id="num_web_purchases" name="num_web_purchases" step="0.01" required>
+    <label for="num_catalog_purchases">Numero de compras feitas em catálogo:</label>
+    <input type="number" id="num_catalog_purchases" name="num_catalog_purchases" step="0.01" required>
+    <label for="num_store_purchases">Numero de compras nas lojas físicas:</label>
+    <input type="number" id="num_store_purchases" name="num_store_purchases" step="0.01" required>
+    <label for="num_web_visits_month">Numero de visitas no site:</label>
+    <input type="number" id="num_web_visits_month" name="num_web_visits_month" step="0.01" required>
+    <label for="response">Resposta na ultima campanha:</label>
+    <input type="number" id="response" name="response" step="0.01" required>
+    <button type="submit">Enviar</button>
+</form>
+
+{% endblock %}
